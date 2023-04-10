@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course_nav_graph"
+    app:startDestination="@id/courseMainFragment">
+
+    <fragment
+        android:id="@+id/courseMainFragment"
+        android:label="fragment_event_main"
+        tools:layout="@layout/fragment_course_option" >
+        <action
+            android:id="@+id/action_courseMainFragment_to_courseDetailsFragment"
+            app:destination="@id/courseDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/courseMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseDetailsFragment"
+        android:label="fragment_course_details"
+        tools:layout="@layout/fragment_course_details" >
+        <action
+            android:id="@+id/action_courseDetailsFragment_to_courseMainFragment"
+            app:destination="@id/courseMainFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/courseMainFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_eventDetailsFragment_to_eventPalFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:label="fragment_event_pal"
+        tools:layout="@layout/fragment_register" />
+</navigation>

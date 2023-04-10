@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_nav_graph"
+    app:startDestination="@id/feedFragmentMenu">
+
+    <fragment
+        android:id="@+id/feedFragmentMenu"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed_main" />
+    <fragment
+        android:id="@+id/eventFragmentMenu"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_course_option" />
+    <fragment
+        android:id="@+id/profileFragmentMenu"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_api_test" />
+    <fragment
+        android:id="@+id/mccFragmentMenu"
+        android:label="fragment_mcc"
+        tools:layout="@layout/fragment_mcc" />
+    <fragment
+        android:id="@+id/msmFragmentMenu"
+        android:label="fragment_msm"
+        tools:layout="@layout/fragment_msm" />
+</navigation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/feedFragmentMenu"
+        android:icon="@drawable/ic_baseline_circle_custom"
+        android:title="Home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/courseFragmentMenu"
+        android:icon="@drawable/ic_baseline_circle_custom"
+        android:title="Course Option"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/ApiFragmentMenu"
+        android:icon="@drawable/ic_baseline_circle_custom"
+        android:title="Api Test"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/msmFragmentMenu"
+        android:icon="@drawable/ic_baseline_circle_custom"
+        android:title=" MCC"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/msiFragmentMenu"
+        android:icon="@drawable/ic_baseline_circle_custom"
+        android:title="MSM"
+        app:showAsAction="always"/>
+
+</menu>
