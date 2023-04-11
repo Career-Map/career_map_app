@@ -37,7 +37,7 @@
             app:layout_constraintEnd_toStartOf="@+id/btnEventFilter"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:queryHint="Find Events" />
+            app:queryHint="Find course" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvEventStatus"

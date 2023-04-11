@@ -2,41 +2,76 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/event_nav_graph"
+    android:id="@+id/api_nav_graph"
     app:startDestination="@id/apimainFragment">
 
     <fragment
         android:id="@+id/apimainFragment"
-        android:label="fragment_event_main"
-        tools:layout="@layout/fragment_course_option" >
+        tools:layout="@layout/fragment_api_main" >
         <action
-            android:id="@+id/action_eventMainFragment_to_eventDetailsFragment"
-            app:destination="@id/courseDetailsFragment"
+            android:id="@+id/action_apimainFragment_to_apiregisterFragmentt"
+            app:destination="@id/apiregisterFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
-            app:popUpTo="@id/courseMainFragment" />
+            app:popUpTo="@id/apimainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/courseDetailsFragment"
-        android:label="fragment_event_details"
-        tools:layout="@layout/fragment_course_details" >
+        android:id="@+id/apiregisterFragment"
+        tools:layout="@layout/fragment_api_register" >
         <action
-            android:id="@+id/action_eventDetailsFragment_to_eventMainFragment"
-            app:destination="@id/courseMainFragment"
+            android:id="@+id/action_apiregisterFragment_to_apiFragment"
+            app:destination="@id/apiFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/apiFragment"
+        tools:layout="@layout/fragment_api" >
+
+
+        <action
+            android:id="@+id/action_apiFragment_to_testFragment"
+            app:destination="@id/testFragment"
             app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"
-            app:popUpTo="@id/courseMainFragment"
+            app:popUpTo="@id/apiFragment"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_eventDetailsFragment_to_eventPalFragment"
-            app:destination="@id/registerFragment" />
+            android:id="@+id/action_apiFragment_to_resultapitestfragment"
+            app:destination="@id/resultapitestfragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/apiFragment"
+            app:popUpToInclusive="true"/>
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/testFragment"
+        tools:layout="@layout/fragment_api_test">
+        <action
+            android:id="@+id/action_testFragment_to_resultapitestfragment"
+            app:destination="@id/resultapitestfragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/apiFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
-        android:id="@+id/registerFragment"
-        android:label="fragment_event_pal"
-        tools:layout="@layout/fragment_register" />
+        android:id="@+id/resultapitestfragment"
+        tools:layout="@layout/fragment_api_test_result"/>
+
 </navigation>
