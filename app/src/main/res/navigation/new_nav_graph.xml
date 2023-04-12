@@ -10,19 +10,15 @@
         android:label="fragment_feed"
         tools:layout="@layout/fragment_feed_main" />
     <fragment
-        android:id="@+id/eventFragmentMenu"
-        android:label="fragment_events"
+        android:id="@+id/courseFragmentMenu"
         tools:layout="@layout/fragment_course_option" />
     <fragment
-        android:id="@+id/profileFragmentMenu"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_api_test" />
+        android:id="@+id/apiFragmentMenu"
+        tools:layout="@layout/fragment_api_main" />
     <fragment
         android:id="@+id/mccFragmentMenu"
-        android:label="fragment_mcc"
         tools:layout="@layout/fragment_mcc" />
     <fragment
         android:id="@+id/msmFragmentMenu"
-        android:label="fragment_msm"
         tools:layout="@layout/fragment_msm" />
 </navigation>

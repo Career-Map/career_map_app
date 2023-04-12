@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/apiFragment"
-        tools:layout="@layout/fragment_api" >
+        tools:layout="@layout/fragment_api_registered" >
 
 
         <action

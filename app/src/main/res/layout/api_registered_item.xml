@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:neumorph_shadowColorDark="@color/neumorph_shadowColorDark"
+    app:neumorph_shadowColorLight="@color/neumorph_colorShadowLight"
+    app:neumorph_shapeType="basin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/ApitvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+            android:lineHeight="16dp"
+            android:maxLines="2"
+            android:paddingEnd="8dp"
+            android:text="Aptitude Test"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvattempt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ellipsize="end"
+            android:text="Attempt: 1/2"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ApitvTitle"
+            app:layout_constraintEnd_toEndOf="@+id/forwardiicon_api"
+            app:layout_constraintTop_toTopOf="@+id/ApitvTitle" />
+
+        <TextView
+            android:id="@+id/ApitvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:gravity="start"
+            android:maxLines="2"
+            android:text="This is a demo description"
+            android:textColor="#423D3D"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ApitvTitle" />
+
+        <ImageView
+            android:id="@+id/forwardiicon_api"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="168dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            app:layout_constraintStart_toEndOf="@+id/ApitvDescription"
+            app:layout_constraintTop_toTopOf="@+id/ApitvDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</soup.neumorphism.NeumorphCardView>
