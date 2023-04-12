@@ -163,7 +163,6 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/BioTIL"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="16dp"
@@ -254,7 +253,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         app:title="Edit Profile"
-        android:elevation="10dp"
+        android:elevation="16dp"
         app:titleTextColor="@color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
