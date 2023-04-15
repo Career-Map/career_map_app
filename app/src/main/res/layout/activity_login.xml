@@ -3,11 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/Login_layout"
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
     android:gravity="center"
     android:orientation="vertical"
-    android:visibility="visible">
+    android:visibility="visible"
+    tools:context=".LoginActivity">
 
     <soup.neumorphism.NeumorphCardView
         style="@style/Widget.Neumorph.CardView"
@@ -38,25 +40,51 @@
                 android:textSize="25dp"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/username"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:hint="Name"
-                android:padding="8dp"
-                android:textColor="@color/black" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:hintEnabled="false">
 
-            <EditText
-                android:id="@+id/password"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:hint="Password"
-                android:padding="8dp"
-                android:textColor="@color/black" />
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <TextView
+                android:id="@+id/forgotPassTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Forget?"
@@ -84,7 +112,7 @@
     </soup.neumorphism.NeumorphCardView>
 
     <TextView
-        android:id="@+id/signuptext"
+        android:id="@+id/signupTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
@@ -104,21 +132,41 @@
         android:layout_marginTop="4dp">
 
         <ImageView
+            android:id="@+id/btnGoogle"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/google" />
 
         <ImageView
+            android:id="@+id/btnTwitter"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/twitter"
             android:padding="4dp"/>
 
         <ImageView
+            android:id="@+id/btnInsta"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/insta" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp" />
     </LinearLayout>
 
 
