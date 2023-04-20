@@ -22,13 +22,13 @@
         />
 
     <item
-        android:id="@+id/msmFragmentMenu"
+        android:id="@+id/mccFragmentMenu"
         android:icon="@drawable/ic_baseline_circle_custom"
         android:title=" MCC"
         app:showAsAction="always"/>
 
     <item
-        android:id="@+id/msiFragmentMenu"
+        android:id="@+id/msmFragmentMenu"
         android:icon="@drawable/ic_baseline_circle_custom"
         android:title="MSM"
         app:showAsAction="always"/>

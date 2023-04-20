@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSaveProfile"
@@ -43,6 +44,9 @@
                 android:backgroundTint="@color/black"
                 android:ems="10"
                 android:hint="Enter Name"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:imeOptions="actionNext"
                 android:inputType="textPersonName|textMultiLine|textCapSentences|textAutoComplete|textAutoCorrect"
                 android:maxLines="2"
@@ -114,7 +118,7 @@
                     android:id="@+id/profile_image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/profile_demo"
+                    android:src="@drawable/user"
                     app:civ_border_color="@color/black"
                     app:civ_border_width="1dp"
                     app:civ_circle_background_color="@color/white" />
@@ -197,45 +201,35 @@
 
 
             <TextView
-                android:id="@+id/tvSkills"
+                android:id="@+id/tvgraduate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Skills"
+                android:text="Graduate"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 app:layout_constraintStart_toStartOf="@id/etPhone"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/etPhone" />
 
-
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/skillTIL"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            <EditText
+                android:id="@+id/etgraduate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:hint="Enter Phone Number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvSkills">
-
-                <com.google.android.material.chip.ChipGroup
-                    android:id="@+id/skillsChipGroup"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etSkills"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Add skills"
-                    android:inputType="textCapSentences|textAutoComplete" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+                app:layout_constraintTop_toBottomOf="@+id/tvgraduate"/>
 
 
 

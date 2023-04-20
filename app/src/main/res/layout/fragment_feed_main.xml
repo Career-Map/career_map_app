@@ -27,8 +27,7 @@
                 android:id="@+id/ivFeedImage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/profile_demo"/>
+                android:scaleType="fitXY" />
 
         </com.google.android.material.card.MaterialCardView>
 
@@ -39,7 +38,6 @@
             android:layout_margin="16dp"
             android:ellipsize="end"
             android:maxLines="2"
-            android:text="Hello swayam !"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/cvImage"
@@ -52,7 +50,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Good morning"
             android:textColor="#ff0000"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,20 +70,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cvImage">
 
-           <!-- <com.airbnb.lottie.LottieAnimationView
+            <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/cvPosterImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 app:lottie_autoPlay="true"
-                app:lottie_loop="false" /> -->
+                app:lottie_loop="false" />
 
-            <ImageView
+          <!--  <ImageView
                 android:id="@+id/cvPosterImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/feed_banner" />
+                android:src="@drawable/feed_banner" />-->
 
         </com.google.android.material.card.MaterialCardView>
 
@@ -181,7 +178,7 @@ lLorem ipsum dolor sit amet, consectetug elit, sed do eiusmod tempor incididunt 
 
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/unpcomingEventsRecyclerView"
+            android:id="@+id/upcomingEventsRecyclerView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -208,7 +205,7 @@ lLorem ipsum dolor sit amet, consectetug elit, sed do eiusmod tempor incididunt 
             android:textStyle="bold"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/unpcomingEventsRecyclerView" />
+            app:layout_constraintTop_toBottomOf="@+id/upcomingEventsRecyclerView" />
 
         <TextView
             android:id="@+id/tvViewAllpoolofcounselor"

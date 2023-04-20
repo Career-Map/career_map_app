@@ -20,8 +20,25 @@
         tools:targetApi="33">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FAQActivity"
+            android:exported="true" />
+
+        <activity android:name=".EditProfileActivity"
             android:exported="true"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true"/>
+
         <activity
             android:name=".SignUpActivity"
             android:screenOrientation="portrait"
@@ -30,6 +47,7 @@
             android:name=".LoginActivity"
             android:screenOrientation="portrait"
             android:exported="true"/>
+
 
         <activity
             android:name=".SplashScreen"

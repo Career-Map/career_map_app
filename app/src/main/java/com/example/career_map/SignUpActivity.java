@@ -253,7 +253,6 @@ public class SignUpActivity extends AppCompatActivity {
                         userInfo.put(constant.getUserPhotoField(), null);
                         userInfo.put(constant.getUserBioField(), null);
                         userInfo.put(constant.getUserLinkedinField(), null);
-                        userInfo.put(constant.getUserInterestedChipsField(), null);
                         userInfo.put(constant.getUserIdField(), firebaseAuth.getUid());
 
 
@@ -342,7 +341,6 @@ public class SignUpActivity extends AppCompatActivity {
                     userInfo.put(constant.getUserPhotoField(), null);
                     userInfo.put(constant.getUserBioField(), null);
                     userInfo.put(constant.getUserLinkedinField(), null);
-                    userInfo.put(constant.getUserInterestedChipsField(), null);
                     userInfo.put(constant.getUserIdField(), firebaseAuth.getUid());
 
 

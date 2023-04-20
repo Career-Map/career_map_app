@@ -10,19 +10,22 @@ public class Constant {
     String userPhotoField = "Photo";
     String userBioField = "Bio";
     String userLinkedinField = "LinkedIn";
-    String userInterestedChipsField = "Chips";
     String userModelObject = "userModelObject";
     String Chats = "Chats", Messages = "Messages", Requests = "Requests", Connections = "Connections", ChatConnections = "ChatConnections";
 
 
+    String events = "Events";
+    String eventPosters = "EventPosters";
+    String eventThumbnailPosters = "ThumbnailPoster";
+    String eventDate = "eventDate";
+
+    String FAQ = "FAQ";
+    String faqId = "faqId";
+    String faqQuestion = "faqQuestion";
+    String faqAnswer = "faqAnswer";
 
 
 
-
-
-    public String getUserInterestedChipsField() {
-        return userInterestedChipsField;
-    }
 
     public String getUserModelObject() {
         return userModelObject;
@@ -83,6 +86,38 @@ public class Constant {
     public String getConnections() {
         return Connections;
     }
+
+    public String getFAQ() {
+        return FAQ;
+    }
+
+    public String getFaqId() {
+        return faqId;
+    }
+
+    public String getFaqQuestion() {
+        return faqQuestion;
+    }
+
+    public String getFaqAnswer() {
+        return faqAnswer;
+    }
+
+    public String getEvents() {
+        return events;
+    }
+
+    public String getEventPosters() {
+        return eventPosters;
+    }
+
+    public String getEventThumbnailPosters() {
+        return eventThumbnailPosters;
+    }
+    public String getEventDate() {
+        return eventDate;
+    }
+
 
 
 

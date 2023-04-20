@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-
-
-        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+      <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/cardView4"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -18,16 +15,36 @@
                 android:layout_height="150dp"
                 android:src="@drawable/event_live1"/>
 
-            <TextView
-                android:id="@+id/time_event"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="12 Pm"
-                android:gravity="bottom"
-                android:padding="10dp"
-                android:textStyle="bold"
-                android:textColor="#B91111"/>
 
 
-        </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tvDateDay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="12"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="#B91111"/>
+
+    <TextView
+        android:id="@+id/tvDateMonth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="DEC"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="#B91111"/>
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
 
