@@ -8,6 +8,7 @@
     <fragment
         android:id="@+id/startFragment"
         android:label="fragment_start"
+        android:name="com.example.career_map.StartFragment"
         tools:layout="@layout/fragment_start" >
 
     </fragment>

@@ -8,6 +8,7 @@
     <fragment
         android:id="@+id/courseMainFragment"
         android:label="fragment_event_main"
+        android:name="com.example.career_map.courseFragment"
         tools:layout="@layout/fragment_course_option" >
         <action
             android:id="@+id/action_courseMainFragment_to_courseDetailsFragment"
@@ -21,6 +22,7 @@
     <fragment
         android:id="@+id/courseDetailsFragment"
         android:label="fragment_course_details"
+        android:name="com.example.career_map.CourseDetails"
         tools:layout="@layout/fragment_course_details" >
         <action
             android:id="@+id/action_courseDetailsFragment_to_courseMainFragment"

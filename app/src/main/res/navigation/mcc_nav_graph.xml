@@ -7,6 +7,7 @@
 
     <fragment
         android:id="@+id/mccmainFragment"
+        android:name="com.example.career_map.mccFragment"
         tools:layout="@layout/fragment_mcc" >
 
         <action
@@ -21,6 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/mccregisterFragment"
+        android:name="com.example.career_map.RegisterFragment"
         tools:layout="@layout/fragment_register" />
 
 
