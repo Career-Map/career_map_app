@@ -7,18 +7,27 @@
 
     <fragment
         android:id="@+id/feedFragmentMenu"
+        android:name="com.example.career_map.FeedMainFragment"
         android:label="fragment_feed"
         tools:layout="@layout/fragment_feed_main" />
     <fragment
         android:id="@+id/courseFragmentMenu"
-        tools:layout="@layout/fragment_course_option" />
+        tools:layout="@layout/fragment_course_option"
+        android:name="com.example.career_map.courseFragment"
+        android:label="fragment_course"/>
     <fragment
         android:id="@+id/apiFragmentMenu"
-        tools:layout="@layout/fragment_api_main" />
+        tools:layout="@layout/fragment_api_main"
+        android:name="com.example.career_map.apiFragment"
+        android:label="fragment_api"/>
     <fragment
         android:id="@+id/mccFragmentMenu"
-        tools:layout="@layout/fragment_mcc" />
+        tools:layout="@layout/fragment_mcc"
+        android:name="com.example.career_map.mccFragment"
+        android:label="fragment_mcc"/>
     <fragment
         android:id="@+id/msmFragmentMenu"
-        tools:layout="@layout/fragment_msm" />
+        tools:layout="@layout/fragment_msm"
+        android:name="com.example.career_map.msmFragment"
+        android:label="fragment_msm"/>
 </navigation>

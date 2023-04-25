@@ -50,18 +50,14 @@
 
 
         <activity
-            android:name=".SplashScreen"
-            android:exported="true"
-            android:theme="@style/SplashScreen">
+            android:name="com.example.career_map.SplashScreen"
+            android:screenOrientation="portrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
     </application>
 

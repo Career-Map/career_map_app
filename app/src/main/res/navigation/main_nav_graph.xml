@@ -9,17 +9,7 @@
         android:id="@+id/startFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
-        <action
-            android:id="@+id/action_startFragment_to_inboxNewFragment3"
-            app:destination="@id/inboxNewFragment3"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
-            app:popUpTo="@id/startFragment" />
+
     </fragment>
-    <fragment
-        android:id="@+id/inboxNewFragment3"
-        android:label="fragment_inbox_new"
-        tools:layout="@layout/fragment_course_details" />
+
 </navigation>
