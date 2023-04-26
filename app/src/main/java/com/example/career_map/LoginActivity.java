@@ -117,7 +117,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-//        LoginManager.getInstance().logInWithReadPermissions(LoginActivity.this, Arrays.asList("email", "public_profile"));
+//      LoginManager.getInstance().logInWithReadPermissions(LoginActivity.this, Arrays.asList("email", "public_profile"));
 
 
 //        Google Sign in

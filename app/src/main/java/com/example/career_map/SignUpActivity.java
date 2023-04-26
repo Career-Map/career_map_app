@@ -223,11 +223,7 @@ public class SignUpActivity extends AppCompatActivity {
         Log.d(TAG, "loginWithCredential: Name: " + user.getDisplayName());
         Log.d(TAG, "loginWithCredential: Email: " + user.getEmail());
         Log.d(TAG, "loginWithCredential: Phone: " + user.getPhoneNumber());
-        if (temp_flag == 1) {
-            Log.d(TAG, "loginWithCredential: Role: Organizer");
-        } else {
-            Log.d(TAG, "loginWithCredential: Role: User");
-        }
+
 
 //        To add user to database if not done
         DocumentReference documentReference = firebaseDB.collection("Users")

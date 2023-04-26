@@ -121,9 +121,8 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_margin="64dp"
         android:background="@color/white"
-        app:headerLayout="@layout/event_feed_layout"
+        app:headerLayout="@layout/drawer_header"
         android:layout_gravity="start"
         app:menu="@menu/main_drawer_menu">
 

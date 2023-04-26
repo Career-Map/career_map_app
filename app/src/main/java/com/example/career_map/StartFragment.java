@@ -432,8 +432,6 @@ public class StartFragment extends Fragment implements NavigationView.OnNavigati
                 }
             }).show();
         }
-        else if (id == R.id.settings)
-            startActivity(new Intent(getContext(), SettingsActivity.class));
 
 
         else if (id == R.id.menu_faq)
