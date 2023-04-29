@@ -42,8 +42,6 @@ public class EventFeedAdapter extends FirestoreRecyclerAdapter<EventModel, Event
 
         holder.day.setText(day);
         holder.month.setText(month);
-        holder.title.setText(model.getEventTitle());
-        holder.description.setText(model.getEventDescription());
 
         if (model.getEventThumbnailPoster() == null)
             Glide.with(context).load(model.getEventPoster()).into(holder.image);
@@ -77,7 +75,7 @@ public class EventFeedAdapter extends FirestoreRecyclerAdapter<EventModel, Event
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView title, day, month, description;
+        TextView day, month;
         ImageView image;
 
         public ViewHolder(@NonNull View itemView) {

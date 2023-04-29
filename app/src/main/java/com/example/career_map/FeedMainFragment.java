@@ -16,9 +16,9 @@ import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SnapHelper;
 
+import com.bumptech.glide.Glide;
 import com.example.career_map.Utils.Constant;
 import com.example.career_map.databinding.FragmentFeedMainBinding;
-import com.bumptech.glide.Glide;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -140,23 +140,19 @@ public class FeedMainFragment extends Fragment {
 
         SnapHelper snapHelper = new LinearSnapHelper();
 
+
         RecyclerView recyclerView = binding.upcomingEventsRecyclerView;
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         recyclerView.setHasFixedSize(true);
         recyclerView.setNestedScrollingEnabled(false);
         snapHelper.attachToRecyclerView(recyclerView);
 
+
         adapter = new EventFeedAdapter(getContext(), options);
 
         adapter.setOnItemClickListener(new EventFeedAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(DocumentSnapshot snapshot) {
-                EventModel model = snapshot.toObject(EventModel.class);
-
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("eventDetails", model);
-                bundle.putString("from", "feed");
-                navController.navigate(R.id.action_feedMainFragment_to_eventDetailsFragment4, bundle);
             }
         });
 
@@ -201,20 +197,6 @@ public class FeedMainFragment extends Fragment {
         });
 
 
-
-
-        binding.tvViewAllUpcomingEvents.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment navHostFragment = (NavHostFragment) getParentFragment();
-                if (navHostFragment != null) {
-                    FeedFragment feedFragment = (FeedFragment) navHostFragment.getParentFragment();
-                    if (feedFragment != null) {
-                        feedFragment.onClickViewAllEvents();
-                    }
-                }
-            }
-        });
 
 
 

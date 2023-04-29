@@ -8,7 +8,7 @@
         android:title="Log Out" />
 
     <item
-        android:id="@+id/menu_addEvent"
+        android:id="@+id/menu_editprofile"
         android:icon="@drawable/ic_baseline_person_24"
         android:title="Edit Profile" />
 

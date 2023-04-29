@@ -1,12 +1,11 @@
 package com.example.career_map;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class UserModel implements Serializable {
     String userName, userEmail, userPhoto, userPhone;
     String userBio;
-    String userLinkedin;
+    String userGraduate;
     String userID;
 
     private Boolean selected;
@@ -14,13 +13,13 @@ public class UserModel implements Serializable {
     public UserModel() {
     }
 
-    public UserModel(String userName, String userEmail, String userPhoto, String userPhone, String userBio, String userLinkedin, String userRole, String organizerRole, String userID, List<String> userChips) {
+    public UserModel(String userName, String userEmail, String userPhoto, String userPhone, String userBio, String userGraduate, String userID) {
         this.userName = userName;
         this.userEmail = userEmail;
         this.userPhoto = userPhoto;
         this.userPhone = userPhone;
         this.userBio = userBio;
-        this.userLinkedin = userLinkedin;
+        this.userGraduate = userGraduate;
         this.userID = userID;
     }
 
@@ -64,12 +63,12 @@ public class UserModel implements Serializable {
         this.userBio = userBio;
     }
 
-    public String getUserLinkedin() {
-        return userLinkedin;
+    public String getUserGraduate() {
+        return userGraduate;
     }
 
-    public void setUserLinkedin(String userLinkedin) {
-        this.userLinkedin = userLinkedin;
+    public void setUserGraduate(String userGraduate) {
+        this.userGraduate = userGraduate;
     }
 
 

@@ -168,7 +168,7 @@ public class EditProfileActivity extends AppCompatActivity {
         checkEmptyField(activityEditProfileBinding.BioTV);
         checkEmptyField(activityEditProfileBinding.etPhone);
         checkphonenumber(activityEditProfileBinding.etPhone);
-//        checkEmptyField(activityEditProfileBinding.etLinkedIn);
+        checkEmptyField(activityEditProfileBinding.etgraduate);
 
         if (flag == 4) {
             updateUser();
@@ -274,6 +274,7 @@ public class EditProfileActivity extends AppCompatActivity {
         userInfo.put(constant.getUserNameField(), activityEditProfileBinding.etName.getText().toString().trim());
         userInfo.put(constant.getUserPhoneField(), activityEditProfileBinding.etPhone.getText().toString().trim());
         userInfo.put(constant.getUserBioField(), activityEditProfileBinding.BioTV.getText().toString().trim());
+        userInfo.put(constant.getUserGraduate(), activityEditProfileBinding.etgraduate.getText().toString().trim());
 
 
         if (downloadUri != null)

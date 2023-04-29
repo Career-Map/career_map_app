@@ -332,7 +332,7 @@ public class StartFragment extends Fragment implements NavigationView.OnNavigati
         userModel.setUserEmail(documentSnapshot.getString(constant.getUserEmailField()));
         userModel.setUserPhoto(documentSnapshot.getString(constant.getUserPhotoField()));
         userModel.setUserBio(documentSnapshot.getString(constant.getUserBioField()));
-        userModel.setUserLinkedin(documentSnapshot.getString(constant.getUserLinkedinField()));
+        userModel.setUserGraduate(documentSnapshot.getString(constant.getUserGraduate()));
         userModel.setUserPhone(documentSnapshot.getString(constant.getUserPhoneField()));
         userModel.setUserID(documentSnapshot.getString(constant.getUserIdField()));
 
@@ -432,6 +432,9 @@ public class StartFragment extends Fragment implements NavigationView.OnNavigati
                 }
             }).show();
         }
+
+        else if (id == R.id.menu_editprofile)
+            startActivity(new Intent(getContext(),EditProfileActivity.class));
 
 
         else if (id == R.id.menu_faq)

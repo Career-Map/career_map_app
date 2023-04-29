@@ -240,7 +240,8 @@ public class SignUpActivity extends AppCompatActivity {
                     if (documentSnapshot.exists()) {
 //                        User exists with this account
                         Toast.makeText(SignUpActivity.this, "User already exists with this account, Please go to Log in page", Toast.LENGTH_SHORT).show();
-                    } else {
+                    } else
+                    {
 //                        Create account
                         userInfo.put(constant.getUserNameField(), user.getDisplayName());
                         userInfo.put(constant.getUserPhoneField(), user.getPhoneNumber());
@@ -248,7 +249,7 @@ public class SignUpActivity extends AppCompatActivity {
                         userInfo.put(constant.getUserPhotoField(), user.getPhotoUrl().toString());
                         userInfo.put(constant.getUserPhotoField(), null);
                         userInfo.put(constant.getUserBioField(), null);
-                        userInfo.put(constant.getUserLinkedinField(), null);
+                        userInfo.put(constant.getUserGraduate(), null);
                         userInfo.put(constant.getUserIdField(), firebaseAuth.getUid());
 
 
@@ -257,7 +258,7 @@ public class SignUpActivity extends AppCompatActivity {
                         documentReference.set(userInfo).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
-//                Update connection to null
+//                        Update connection to null
                                 CollectionReference connectionRef = firebaseDB.collection(constant.getChatConnections());
                                 connectionRef.document(firebaseAuth.getUid()).set(new ChatConnectionModel(null, null));
                             }
@@ -336,7 +337,7 @@ public class SignUpActivity extends AppCompatActivity {
                     userInfo.put(constant.getUserEmailField(), EMAIL_ET);
                     userInfo.put(constant.getUserPhotoField(), null);
                     userInfo.put(constant.getUserBioField(), null);
-                    userInfo.put(constant.getUserLinkedinField(), null);
+                    userInfo.put(constant.getUserGraduate(), null);
                     userInfo.put(constant.getUserIdField(), firebaseAuth.getUid());
 
 
@@ -344,7 +345,7 @@ public class SignUpActivity extends AppCompatActivity {
                     documentReference.set(userInfo).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
-//                Update connection to null
+//                         Update connection to null
                             CollectionReference connectionRef = firebaseDB.collection(constant.getChatConnections());
                             connectionRef.document(firebaseAuth.getUid()).set(new ChatConnectionModel(null, null));
                         }

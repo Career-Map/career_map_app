@@ -8,17 +8,20 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.career_map.databinding.FragmentCourseBinding;
-
 public class courseFragment extends Fragment {
-    private FragmentCourseBinding binding;
+    public courseFragment() {
+        // Required empty public constructor
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-        binding = FragmentCourseBinding.inflate(inflater, container, false);
 
         NavHostFragment navHostFragment = (NavHostFragment) getParentFragment();
         if (navHostFragment != null) {
@@ -28,7 +31,7 @@ public class courseFragment extends Fragment {
             }
         }
 
-        return binding.getRoot();
+        return inflater.inflate(R.layout.fragment_course, container, false);
     }
 
     public void onGoHomeOnBackPressed() {

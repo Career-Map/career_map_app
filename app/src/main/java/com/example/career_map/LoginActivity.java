@@ -263,12 +263,11 @@ public class LoginActivity extends AppCompatActivity {
                         userInfo.put(constant.getUserEmailField(), user.getEmail());
                         userInfo.put(constant.getUserBioField(), document.getString(constant.getUserBioField()));
                         userInfo.put(constant.getUserPhotoField(), document.getString(constant.getUserPhotoField()));
-                        userInfo.put(constant.getUserLinkedinField(), document.getString(constant.getUserLinkedinField()));
+                        userInfo.put(constant.getUserGraduate(), document.getString(constant.getUserGraduate()));
                         userInfo.put(constant.getUserPhoneField(), document.getString(constant.getUserPhoneField()));
                         userInfo.put(constant.getUserIdField(), document.getString(constant.getUserIdField()));
                         Log.d(dTAG, "onComplete: " + userInfo.toString());
 
-                        //        Now we check the role selected
 
 
                         Log.d(dTAG, "loginWithCredential: " + userInfo.toString());

@@ -9,7 +9,7 @@ public class Constant {
     String userPhoneField = "Phone";
     String userPhotoField = "Photo";
     String userBioField = "Bio";
-    String userLinkedinField = "LinkedIn";
+    String userGraduate = "Graduate";
     String userModelObject = "userModelObject";
     String Chats = "Chats", Messages = "Messages", Requests = "Requests", Connections = "Connections", ChatConnections = "ChatConnections";
 
@@ -55,8 +55,8 @@ public class Constant {
         return userBioField;
     }
 
-    public String getUserLinkedinField() {
-        return userLinkedinField;
+    public String getUserGraduate() {
+        return userGraduate;
     }
 
     public String getProfilePictures() {

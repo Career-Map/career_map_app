@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="64dp">
+        android:paddingBottom="20dp">
 
 
         <com.google.android.material.card.MaterialCardView
@@ -154,16 +154,7 @@ lLorem ipsum dolor sit amet, consectetug elit, sed do eiusmod tempor incididunt 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bannerLayout" />
 
-        <TextView
-            android:id="@+id/tvViewAllUpcomingEvents"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="View all"
-            app:layout_constraintBottom_toBottomOf="@+id/tvUpcomingEvents"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tvUpcomingEvents" />
+
 
 
         <TextView
@@ -208,16 +199,7 @@ lLorem ipsum dolor sit amet, consectetug elit, sed do eiusmod tempor incididunt 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/upcomingEventsRecyclerView" />
 
-        <TextView
-            android:id="@+id/tvViewAllpoolofcounselor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="View all"
-            app:layout_constraintBottom_toBottomOf="@+id/tvpoolofcounselor"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tvpoolofcounselor" />
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/poolofthecounselorsRecyclerView"
